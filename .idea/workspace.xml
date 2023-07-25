@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30581a81-13f5-43d4-a275-699334b5e46b" name="Changes" comment="Initial Commit">
+    <list default="true" id="30581a81-13f5-43d4-a275-699334b5e46b" name="Changes" comment="made the input pane, text area and submit button">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/DisplayScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/GameInfoScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/InsertScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/OptionScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lab5/java_5/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lab5/java_5/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/HelloApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,20 +34,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lab5.java_5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.java_5.HelloApplication" />
       <module name="Java_5" />
@@ -50,8 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab5.java_5.Main" />
+      <module name="Java_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab5.java_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -64,7 +94,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690251218900</updated>
-      <workItem from="1690251219917" duration="1610000" />
+      <workItem from="1690251219917" duration="2158000" />
+      <workItem from="1690319806109" duration="3989000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1690254323852</created>
@@ -87,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690254372313</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="made the input pane, text area and submit button">
+      <created>1690255334022</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690255334022</updated>
+    </task>
+    <task id="LOCAL-00005" summary="made the input pane, text area and submit button">
+      <created>1690255396090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690255396090</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="made the input pane, text area and submit button" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the input pane, text area and submit button" />
   </component>
 </project>
