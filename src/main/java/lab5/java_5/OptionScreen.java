@@ -1,4 +1,6 @@
 package lab5.java_5;
+
+import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
@@ -30,7 +32,6 @@ public class OptionScreen extends Scene {
         return hbox;
     }
 
-    // Handle button events (same as in the Main class)
     private static void handleInsertButton(Stage primaryStage) {
         // Switch to the InsertScreen when the "Insert" button is clicked
         Scene insertScene = new InsertScreen(primaryStage);
@@ -39,14 +40,14 @@ public class OptionScreen extends Scene {
 
     private static void handleUpdateButton(Stage primaryStage) {
         // Switch to the UpdateScreen when the "Update" button is clicked
-        //Scene updateScene = new UpdateScreen();
-        //primaryStage.setScene(updateScene);
+        Scene updateScene = new UpdateScreen(primaryStage);
+        primaryStage.setScene(updateScene);
     }
 
     private static void handleDisplayButton(Stage primaryStage) {
         // Switch to the DisplayScreen when the "Display" button is clicked
-        // Scene displayScene = new DisplayScreen();
-       // primaryStage.setScene(displayScene);
+        Scene displayScene = new DisplayScreen(primaryStage);
+        primaryStage.setScene(displayScene);
     }
 
 }

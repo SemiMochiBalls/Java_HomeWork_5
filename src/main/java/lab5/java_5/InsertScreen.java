@@ -7,7 +7,17 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class InsertScreen extends Scene {
+
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/playerdatabasehomework"; // Replace with your database URL
+    private static final String DB_USER = "Sachi";
+    private static final String DB_PASSWORD = "h9W57N9svLa@Mj^Q";
 
     public InsertScreen(Stage primaryStage) {
         super(createInsertGrid(primaryStage), 400, 300);
@@ -66,10 +76,31 @@ public class InsertScreen extends Scene {
 
     private static void handleSubmission(Stage primaryStage, String playerId, String firstName, String lastName,
                                          String postalCode, String address, String province, String phone) {
-        // You can process the basic information here (e.g., save it to a database)
+        // Save the player information to the database
+        savePlayerToDatabase(playerId, firstName, lastName, postalCode, address, province, phone);
 
         // Switch to the GameInfoScreen to ask for game information
         Scene gameInfoScene = new GameInfoScreen(primaryStage);
         primaryStage.setScene(gameInfoScene);
+    }
+
+    private static void savePlayerToDatabase(String playerId, String firstName, String lastName,
+                                             String postalCode, String address, String province, String phone) {
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String insertQuery = "INSERT INTO player (player_id, first_name, last_name, postal_code, address, province, phone) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
+
+            preparedStatement.setString(1, playerId);
+            preparedStatement.setString(2, firstName);
+            preparedStatement.setString(3, lastName);
+            preparedStatement.setString(4, postalCode);
+            preparedStatement.setString(5, address);
+            preparedStatement.setString(6, province);
+            preparedStatement.setString(7, phone);
+
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

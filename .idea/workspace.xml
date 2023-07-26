@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30581a81-13f5-43d4-a275-699334b5e46b" name="Changes" comment="made the input pane, text area and submit button">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/DisplayScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/GameInfoScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/InsertScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/OptionScreen.java" afterDir="false" />
+    <list default="true" id="30581a81-13f5-43d4-a275-699334b5e46b" name="Changes" comment="added several screens&#10;added functionality to the InsertScreen &#10;&#10;Main does not anymore contain the first screen, instead it calls the option screen where the user can select the screen they want &#10;&#10;so far only the option screen works">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/PlayedGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/UpdateScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/DisplayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/DisplayScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/InsertScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/InsertScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/OptionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/OptionScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,25 +33,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Eclipse Adoptium/jdk-17.0.6.10-hotspot/lib/src.zip!/java.sql/java/sql/SQLException.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="2T2pq6CG2nO5hAjmIsK6SQCv08y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lab5.java_5" />
@@ -95,7 +109,8 @@
       <option name="presentableId" value="Default" />
       <updated>1690251218900</updated>
       <workItem from="1690251219917" duration="2158000" />
-      <workItem from="1690319806109" duration="3989000" />
+      <workItem from="1690319806109" duration="7055000" />
+      <workItem from="1690329464811" duration="4798000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1690254323852</created>
@@ -132,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690255396090</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added several screens&#10;added functionality to the InsertScreen &#10;&#10;Main does not anymore contain the first screen, instead it calls the option screen where the user can select the screen they want &#10;&#10;so far only the option screen works">
+      <created>1690325600324</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690325600324</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +163,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="made the input pane, text area and submit button" />
-    <option name="LAST_COMMIT_MESSAGE" value="made the input pane, text area and submit button" />
+    <MESSAGE value="added several screens&#10;added functionality to the InsertScreen &#10;&#10;Main does not anymore contain the first screen, instead it calls the option screen where the user can select the screen they want &#10;&#10;so far only the option screen works" />
+    <option name="LAST_COMMIT_MESSAGE" value="added several screens&#10;added functionality to the InsertScreen &#10;&#10;Main does not anymore contain the first screen, instead it calls the option screen where the user can select the screen they want &#10;&#10;so far only the option screen works" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
