@@ -1,6 +1,5 @@
 package lab5.java_5;
 
-import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;

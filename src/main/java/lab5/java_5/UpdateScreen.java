@@ -16,9 +16,9 @@ import java.sql.SQLException;
 
 public class UpdateScreen extends Scene {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/playerdatabasehomework"; // Replace with your database URL
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/playerdatabasehomework";
     private static final String DB_USER = "Sachi";
-    private static final String DB_PASSWORD = "h9W57N9svLa@Mj^Q";
+    private static final String DB_PASSWORD = "12345";
 
     public UpdateScreen(Stage primaryStage) {
         super(createUpdateGrid(primaryStage), 400, 200);

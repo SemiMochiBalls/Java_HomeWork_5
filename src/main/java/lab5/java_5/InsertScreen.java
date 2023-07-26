@@ -17,7 +17,7 @@ public class InsertScreen extends Scene {
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/playerdatabasehomework"; // Replace with your database URL
     private static final String DB_USER = "Sachi";
-    private static final String DB_PASSWORD = "h9W57N9svLa@Mj^Q";
+    private static final String DB_PASSWORD = "12345";
 
     public InsertScreen(Stage primaryStage) {
         super(createInsertGrid(primaryStage), 400, 300);
