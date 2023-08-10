@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30581a81-13f5-43d4-a275-699334b5e46b" name="Changes" comment="alot of thing happened tbh &#10;&#10;but we got the program running its just having errors connecting to the database">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="30581a81-13f5-43d4-a275-699334b5e46b" name="Changes" comment="updated DB user and passwords">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/DisplayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/DisplayScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/DisplayScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/GameInfoScreen.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/InsertScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/InsertScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/OptionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/OptionScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/PlayedGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/PlayedGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/java_5/UpdateScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/java_5/UpdateScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,25 +43,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sachi/Documents&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;diff.external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lab5.java_5" />
@@ -111,7 +120,13 @@
       <updated>1690251218900</updated>
       <workItem from="1690251219917" duration="2158000" />
       <workItem from="1690319806109" duration="7055000" />
-      <workItem from="1690329464811" duration="6026000" />
+      <workItem from="1690329464811" duration="13772000" />
+      <workItem from="1690344681117" duration="78000" />
+      <workItem from="1691356263504" duration="37000" />
+      <workItem from="1691678138218" duration="2005000" />
+      <workItem from="1691683631810" duration="957000" />
+      <workItem from="1691685598644" duration="1275000" />
+      <workItem from="1691686881085" duration="5787000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1690254323852</created>
@@ -162,18 +177,37 @@
       <option name="project" value="LOCAL" />
       <updated>1690335066886</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated DB user and passwords">
+      <created>1690336848854</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690336848854</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="made the input pane, text area and submit button" />
     <MESSAGE value="added several screens&#10;added functionality to the InsertScreen &#10;&#10;Main does not anymore contain the first screen, instead it calls the option screen where the user can select the screen they want &#10;&#10;so far only the option screen works" />
     <MESSAGE value="alot of thing happened tbh &#10;&#10;but we got the program running its just having errors connecting to the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="alot of thing happened tbh &#10;&#10;but we got the program running its just having errors connecting to the database" />
+    <MESSAGE value="updated DB user and passwords" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated DB user and passwords" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -181,6 +215,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLException" package="java.sql" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

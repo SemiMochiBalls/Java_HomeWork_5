@@ -1,5 +1,6 @@
 package lab5.java_5;
 
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
@@ -15,18 +16,17 @@ public class OptionScreen extends Scene {
     private static HBox createOptionGrid(Stage primaryStage) {
         // Create buttons for different options
         Button insertButton = new Button("Insert");
-        Button updateButton = new Button("Update");
-        Button displayButton = new Button("Display");
+        Button updateButton = new Button("Update/display");
 
         // Set event handlers for the buttons
         insertButton.setOnAction(e -> handleInsertButton(primaryStage));
         updateButton.setOnAction(e -> handleUpdateButton(primaryStage));
-        displayButton.setOnAction(e -> handleDisplayButton(primaryStage));
 
         // Create an HBox to hold the buttons horizontally
-        HBox hbox = new HBox(10); // 10 is the spacing between buttons
+        HBox hbox = new HBox(10); // 10 is the spacings between buttons
         hbox.setPadding(new Insets(20));
-        hbox.getChildren().addAll(insertButton, updateButton, displayButton);
+        hbox.setAlignment(Pos.CENTER); // Set the alignment to center
+        hbox.getChildren().addAll(insertButton, updateButton);
 
         return hbox;
     }
@@ -41,12 +41,6 @@ public class OptionScreen extends Scene {
         // Switch to the UpdateScreen when the "Update" button is clicked
         Scene updateScene = new UpdateScreen(primaryStage);
         primaryStage.setScene(updateScene);
-    }
-
-    private static void handleDisplayButton(Stage primaryStage) {
-        // Switch to the DisplayScreen when the "Display" button is clicked
-        Scene displayScene = new DisplayScreen(primaryStage);
-        primaryStage.setScene(displayScene);
     }
 
 }
