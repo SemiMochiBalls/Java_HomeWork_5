@@ -16,7 +16,7 @@ public class InsertScreen extends Scene {
     private static final String DB_PASSWORD = "12345";
 
     public InsertScreen(Stage primaryStage) {
-        super(createInsertGrid(primaryStage), 400, 450);
+        super(createInsertGrid(primaryStage), 400, 370);
     }
 
     private static GridPane createInsertGrid(Stage primaryStage) {
